@@ -2,7 +2,7 @@ from flask import Flask, redirect, render_template, session, request
 from random import randint
 
 app = Flask(__name__)
-app.secret_key = 'hushhush'
+app.secret_key = 'my_secret_key'
 
 def takeAction(a, b, loc):
 	num = randint(a, b)
